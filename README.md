@@ -1,4 +1,4 @@
-# Bank Customer Retention: End-to-End Predictive ML & BI Solution
+# Bank Customer Retention: End-to-End Predictive ML Solution
 
 ## 📌 Project Overview
 This repository contains a full-stack data professional asset designed to stop capital flight in a commercial bank's portfolio. Instead of relying on lagging historical indicators, this project bridges the gap between **Machine Learning Engineering** and **Strategic Business Intelligence** to provide front-line managers with an interactive, proactive retention ecosystem.
@@ -28,27 +28,5 @@ To prioritize proactive enterprise intervention, an optimized **Balanced Random 
 
 ---
 
-## 📈 Power BI Strategic Dashboard Layout
-The data pipeline exports an enriched dataset featuring predictive features (`Churn_Probability` and `Risk_Segmentation`) directly into an optimized 3-Page Power BI layout:
-
-### Page 1: The Executive Portfolio Dashboard
-* Monitors the macro-level health of the bank’s total managed asset base.
-* Visualizes portfolio capital division across custom risk tiers using dynamic DAX measures.
-
-### Page 2: The Historical Diagnostic Layer
-* Performs an operational "autopsy" on past losses (`Exited = 1`).
-* Uncovers critical business anomalies, including a near-100% historical churn rate spike among customers holding 3 or 4 products.
-
-### Page 3: The Front-Line Tactical Action Plan
-* A searchable operational workspace built explicitly for account relationship managers.
-* Uses conditional formatting traffic lights and quadrant analysis to route retention calls to high-value, high-risk accounts first.
-
----
-
-## 💡 Key Core DAX Metrics Implemented
-```dax
-Total Assets = SUM('Bank_Churn'[Balance])
-
-Historical Churn Capital = CALCULATE([Total Assets], 'Bank_Churn'[Exited] = 1)
 
 Predictive Risk Capital = CALCULATE([Total Assets], 'Bank_Churn'[Risk_Segmentation] = "High Risk (Red)")
