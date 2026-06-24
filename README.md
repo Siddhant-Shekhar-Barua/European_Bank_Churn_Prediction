@@ -26,7 +26,6 @@ To prioritize proactive enterprise intervention, an optimized **Balanced Random 
 * **Class 1 Recall Boosted to 70%:** The model successfully intercepts the vast majority of active churners.
 * **Continuous Feature Generation:** Extracted continuous float value arrays using `.predict_proba()` to enable proactive risk tier segmentation rather than relying on flat binary assumptions.
 
----
 
 
 Predictive Risk Capital = CALCULATE([Total Assets], 'Bank_Churn'[Risk_Segmentation] = "High Risk (Red)")
